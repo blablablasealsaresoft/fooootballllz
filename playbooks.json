@@ -1,0 +1,405 @@
+{
+  "playbooks": [
+    {
+      "id": "whale_snipe_10k",
+      "name": "Whale Snipe $10K+",
+      "description": "Auto-detect and follow whales trading > $10K",
+      "type": "whale_follow",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.413440",
+      "conditions": [
+        {
+          "field": "whale_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 10000
+        },
+        {
+          "field": "whale_confidence",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 70
+        },
+        {
+          "field": "whale_action",
+          "operator": "ConditionOperator.EQUAL",
+          "value": "buy"
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 1000,
+            "follow_pct": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "id": "whale_snipe_25k",
+      "name": "Whale Snipe $25K+ (Auto)",
+      "description": "Auto-snipe whales > $25K with sub-second execution",
+      "type": "whale_follow",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.414983",
+      "conditions": [
+        {
+          "field": "whale_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 25000
+        },
+        {
+          "field": "whale_confidence",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 75
+        },
+        {
+          "field": "whale_action",
+          "operator": "ConditionOperator.EQUAL",
+          "value": "buy"
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 2500,
+            "follow_pct": 0.1,
+            "fast_execution": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "whale_cluster_alert",
+      "name": "Coordinated Whale Cluster",
+      "description": "Detect 3+ coordinated wallets (like Th\u00e9o's 11-wallet pattern)",
+      "type": "cluster",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.414983",
+      "conditions": [
+        {
+          "field": "cluster_wallets_active",
+          "operator": "ConditionOperator.GREATER_EQUAL",
+          "value": 3
+        },
+        {
+          "field": "total_cluster_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 75000
+        },
+        {
+          "field": "cluster_confidence",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 80
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "alert",
+          "params": {
+            "priority": "high",
+            "message": "Coordinated whale activity detected"
+          }
+        },
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 5000,
+            "wait_seconds": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "cex_whale_detector",
+      "name": "CEX Whale Tracker",
+      "description": "Track whales funded from Binance, Coinbase, OKX",
+      "type": "cluster",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.415995",
+      "conditions": [
+        {
+          "field": "funding_source",
+          "operator": "ConditionOperator.IN",
+          "value": [
+            "binance",
+            "coinbase",
+            "okx"
+          ]
+        },
+        {
+          "field": "whale_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 50000
+        },
+        {
+          "field": "hops_to_cex",
+          "operator": "ConditionOperator.LESS_EQUAL",
+          "value": 3
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "alert",
+          "params": {
+            "priority": "medium"
+          }
+        },
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 2500,
+            "follow_pct": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "sportsbook_value_mvp",
+      "name": "MVP Value vs Sportsbooks",
+      "description": "Find undervalued MVP markets vs 50+ sportsbooks",
+      "type": "arbitrage",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.417048",
+      "conditions": [
+        {
+          "field": "market_category",
+          "operator": "ConditionOperator.EQUAL",
+          "value": "mvp"
+        },
+        {
+          "field": "sportsbook_avg_prob",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 0.65
+        },
+        {
+          "field": "polymarket_price",
+          "operator": "ConditionOperator.LESS_THAN",
+          "value": 0.55
+        },
+        {
+          "field": "liquidity",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 50000
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 2000,
+            "reason": "Undervalued vs sportsbooks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sportsbook_value_superbowl",
+      "name": "Super Bowl Value Detector",
+      "description": "Find Super Bowl value vs sportsbook consensus",
+      "type": "arbitrage",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.418048",
+      "conditions": [
+        {
+          "field": "market_name",
+          "operator": "ConditionOperator.CONTAINS",
+          "value": "super bowl"
+        },
+        {
+          "field": "sportsbook_avg_prob",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 0.7
+        },
+        {
+          "field": "polymarket_price",
+          "operator": "ConditionOperator.LESS_THAN",
+          "value": 0.6
+        },
+        {
+          "field": "volume",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 100000
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 3000
+          }
+        }
+      ]
+    },
+    {
+      "id": "superbowl_momentum",
+      "name": "Super Bowl Momentum",
+      "description": "Follow rapid price movements on SB Champion markets",
+      "type": "market_condition",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.418048",
+      "conditions": [
+        {
+          "field": "market_name",
+          "operator": "ConditionOperator.CONTAINS",
+          "value": "super bowl"
+        },
+        {
+          "field": "price_change_5m",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 0.05
+        },
+        {
+          "field": "volume_5m",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 50000
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 1500,
+            "follow_momentum": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "afc_nfc_champion_value",
+      "name": "Conference Champion Value",
+      "description": "AFC/NFC champion markets with whale activity",
+      "type": "market_condition",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.419629",
+      "conditions": [
+        {
+          "field": "market_category",
+          "operator": "ConditionOperator.IN",
+          "value": [
+            "afc_champion",
+            "nfc_champion"
+          ]
+        },
+        {
+          "field": "whale_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 20000
+        },
+        {
+          "field": "sportsbook_confirmation",
+          "operator": "ConditionOperator.EQUAL",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 2000
+          }
+        }
+      ]
+    },
+    {
+      "id": "player_props_whale",
+      "name": "Player Props Whale Follow",
+      "description": "Follow whales on player props (yards, TDs, receptions)",
+      "type": "whale_follow",
+      "enabled": true,
+      "execution_count": 0,
+      "total_pnl": 0,
+      "created_at": "2025-12-31T01:25:36.420634",
+      "conditions": [
+        {
+          "field": "market_category",
+          "operator": "ConditionOperator.IN",
+          "value": [
+            "passing_yards",
+            "rushing_yards",
+            "receiving_yards",
+            "touchdowns"
+          ]
+        },
+        {
+          "field": "whale_size",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 15000
+        },
+        {
+          "field": "whale_confidence",
+          "operator": "ConditionOperator.GREATER_THAN",
+          "value": 75
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "buy",
+          "params": {
+            "size": 1500,
+            "follow_pct": 0.1
+          }
+        }
+      ]
+    }
+  ],
+  "watchlists": [
+    {
+      "id": "top_whales",
+      "name": "Top 10 Whales",
+      "description": "Most successful whale wallets",
+      "type": "wallets",
+      "items": [
+        "0x0000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000002"
+      ],
+      "playbooks": [],
+      "activity_count": 0
+    },
+    {
+      "id": "superbowl_markets",
+      "name": "Super Bowl Markets",
+      "description": "All Super Bowl related markets",
+      "type": "markets",
+      "items": [
+        "super bowl",
+        "sb59",
+        "championship"
+      ],
+      "playbooks": [],
+      "activity_count": 0
+    },
+    {
+      "id": "mvp_candidates",
+      "name": "MVP Candidates",
+      "description": "Top MVP contenders",
+      "type": "markets",
+      "items": [
+        "mahomes",
+        "allen",
+        "lamar",
+        "purdy",
+        "stroud"
+      ],
+      "playbooks": [],
+      "activity_count": 0
+    }
+  ],
+  "arb_routes": []
+}

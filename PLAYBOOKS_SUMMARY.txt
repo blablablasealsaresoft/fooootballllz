@@ -1,0 +1,288 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                    📋 PLAYBOOKS & PLAYLISTS - NEW FEATURE                     ║
+║                                                                               ║
+║                    Automated "If-Then" Trading Strategies                     ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+🎯 WHAT ARE PLAYBOOKS?
+
+Pre-configured trading strategies that AUTO-EXECUTE when conditions are met.
+
+Example: "If whale buys Patriots > $50K, then follow with $5K automatically"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 4 TYPES OF PLAYLISTS
+
+1. 📋 PLAYBOOKS - Conditional strategies
+   Example: "If whale_size > $50K AND market = Patriots THEN buy $5K"
+
+2. 👁️ WATCHLISTS - Curated monitoring lists
+   Example: Track top 10 whale wallets, all Super Bowl markets
+
+3. 📊 SIGNAL QUEUE - Prioritized opportunities
+   Example: Ranked by score = priority + confidence + edge
+
+4. 🔄 ARBITRAGE ROUTES - Cross-platform paths
+   Example: Buy Polymarket → Sell Kalshi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 PRE-BUILT PLAYBOOKS (6 Ready-to-Use)
+
+1. Patriots Whale Follow
+   → Auto-follow whales buying Patriots > $50K with $5K
+
+2. Chiefs Value Play
+   → Buy Chiefs when odds drop below 30%
+
+3. MVP Arbitrage
+   → Auto-execute MVP arb with 3%+ spread
+
+4. Whale Cluster Alert
+   → Alert when 3+ cluster wallets coordinate
+
+5. Super Bowl Momentum
+   → Follow rapid price movements (5% in 5min)
+
+6. Fade The Public
+   → Contrarian: sell when public heavily buys (80%+)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ QUICK START
+
+View all playbooks:
+  python launch.py --playbooks
+
+Load a playbook:
+  python launch.py --load-playbook patriots_whale_follow
+
+View watchlists:
+  python launch.py --watchlists
+
+View signal queue:
+  python launch.py --signals
+
+Interactive menu:
+  python launch.py
+  → Select [7] Playbooks
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 EXAMPLE: Patriots Whale Follow
+
+CONDITIONS (all must be true):
+  ✅ whale_size > $50,000
+  ✅ market_name contains "patriots"
+  ✅ whale_action == "buy"
+
+ACTIONS (execute when conditions met):
+  → buy(size=$5,000, follow_pct=0.10)
+
+SETTINGS:
+  → Cooldown: 5 minutes (prevent spam)
+  → Max executions: 10 per day
+
+RESULT:
+  Every time a whale buys Patriots > $50K, you automatically follow with $5K!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎮 USAGE EXAMPLES
+
+# Load preset playbooks
+python launch.py --load-playbook patriots_whale_follow
+python launch.py --load-playbook chiefs_value
+python launch.py --load-playbook mvp_arb
+
+# View what's loaded
+python launch.py --playbooks
+
+# Start system with playbooks
+python launch.py --full
+
+# Playbooks now auto-execute when conditions met!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ CONFIGURATION
+
+Add to your config.py:
+
+# Enable automatic playbook execution
+ENABLE_PLAYBOOKS = True
+
+# Auto-load these on startup
+AUTO_LOAD_PLAYBOOKS = [
+    "patriots_whale_follow",
+    "chiefs_value",
+    "mvp_arb",
+]
+
+# Signal queue auto-execution
+SIGNAL_QUEUE_AUTO_EXECUTE = True
+SIGNAL_QUEUE_EXECUTION_INTERVAL = 5  # seconds
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 PLAYBOOK STRUCTURE
+
+IF (CONDITIONS):
+  • whale_size > $50K
+  • market contains "patriots"
+  • action == "buy"
+
+THEN (ACTIONS):
+  • buy(size=$5K)
+  • alert(priority="high")
+  • wait(seconds=30)
+
+WITH (SETTINGS):
+  • cooldown: 5 minutes
+  • max_executions: 10
+  • expires: 7 days
+
+TRACKS (PERFORMANCE):
+  • Execution count
+  • Total P&L
+  • Last execution
+  • Success rate
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👁️ WATCHLISTS
+
+Pre-built watchlists:
+
+• top_whales
+  → Most successful whale wallets
+  → Auto-triggers associated playbooks
+
+• superbowl_markets
+  → All Super Bowl related markets
+  → Keywords: "super bowl", "sb59", "championship"
+
+• mvp_candidates
+  → Top MVP contenders
+  → Players: Mahomes, Allen, Lamar, Purdy, Stroud
+
+• high_volume_markets
+  → Markets with > $1M volume
+  → Dynamically populated
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 SIGNAL QUEUE
+
+Automatically prioritizes trading opportunities!
+
+SCORE FORMULA:
+  Score = (Priority × 40%) + (Confidence × 30%) + (Edge × 30%)
+
+EXAMPLE QUEUE:
+  1. MVP Arb (Score: 92.5)
+     → 3.5% spread, 95% confidence, urgent
+  
+  2. Patriots Whale (Score: 87.3)
+     → $65K whale, 85% confidence, high edge
+  
+  3. Chiefs Value (Score: 76.1)
+     → 0.28 price, 80% confidence, good value
+
+Auto-executes top signal every 5 seconds (configurable)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 ARBITRAGE ROUTES
+
+Pre-defined execution paths for complex arb:
+
+SIMPLE ROUTE:
+  Buy Polymarket → Sell Kalshi
+
+COMPLEX ROUTE (3-platform):
+  Buy Polymarket → Sell Kalshi → Hedge DraftKings
+
+SETTINGS:
+  • min_spread_pct: 2.0%
+  • max_size_usd: $10,000
+  • max_slippage_pct: 1.0%
+
+TRACKS PERFORMANCE:
+  • Execution count
+  • Total profit
+  • Average spread
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ BEST PRACTICES
+
+1. Start Conservative
+   → High thresholds ($50K+ whale size)
+   → Small position sizes ($1K-2K)
+   → Long cooldowns (10+ minutes)
+
+2. Test in Paper Trading Mode
+   → PAPER_TRADING_MODE = True in config.py
+   → Verify strategy logic
+
+3. Monitor Performance
+   → Check P&L regularly
+   → Adjust thresholds based on results
+   → Disable underperformers
+
+4. Use Watchlists
+   → Curate quality wallets/markets
+   → Don't follow every signal
+   → Focus on proven performers
+
+5. Combine Strategies
+   → Use multiple playbooks
+   → Diversify across market types
+   → Balance aggressive + conservative
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION
+
+Detailed guide:
+  → PLAYBOOKS_GUIDE.md (full documentation)
+
+Quick reference:
+  → This file (PLAYBOOKS_SUMMARY.txt)
+
+Main docs:
+  → README.md (system overview)
+  → QUICK_START.md (setup guide)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚨 SAFETY WARNINGS
+
+⚠️  Playbooks can execute rapidly - be careful!
+⚠️  Always set max execution limits
+⚠️  Use cooldowns to prevent overtrading
+⚠️  Test in paper mode first
+⚠️  Review conditions carefully before enabling
+⚠️  Start with small position sizes
+⚠️  Monitor performance closely
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 YOU'RE READY!
+
+1. Load playbooks:
+   python launch.py --load-playbook patriots_whale_follow
+
+2. Start system:
+   python launch.py --full
+
+3. Playbooks auto-execute when conditions met!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AUTOMATE YOUR EDGE! 📋🚀
+

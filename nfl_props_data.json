@@ -1,0 +1,691 @@
+{
+  "timestamp": "2025-12-31T00:52:02.897663",
+  "summary": {
+    "last_refresh": "2025-12-31T00:52:02.895647",
+    "total_markets": 32,
+    "by_category": {
+      "game_props": 32
+    },
+    "by_platform": {
+      "espn": 32
+    }
+  },
+  "arbitrage": [],
+  "value_bets": [],
+  "markets": {
+    "game_props": [
+      {
+        "id": "espn_401772969_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Carolina Panthers @ Tampa Bay Buccaneers - Spread (-2.5)",
+        "outcomes": [
+          "Tampa Bay Buccaneers -2.5",
+          "Carolina Panthers 2.5"
+        ],
+        "prices": {
+          "Tampa Bay Buccaneers -2.5": 0.5,
+          "Carolina Panthers 2.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772969",
+          "spread": -2.5
+        }
+      },
+      {
+        "id": "espn_401772969_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Carolina Panthers @ Tampa Bay Buccaneers - Total (43.5)",
+        "outcomes": [
+          "Over 43.5",
+          "Under 43.5"
+        ],
+        "prices": {
+          "Over 43.5": 0.5,
+          "Under 43.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772969",
+          "total": 43.5
+        }
+      },
+      {
+        "id": "espn_401772961_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Seattle Seahawks @ San Francisco 49ers - Spread (1.5)",
+        "outcomes": [
+          "San Francisco 49ers 1.5",
+          "Seattle Seahawks -1.5"
+        ],
+        "prices": {
+          "San Francisco 49ers 1.5": 0.5,
+          "Seattle Seahawks -1.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772961",
+          "spread": 1.5
+        }
+      },
+      {
+        "id": "espn_401772961_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Seattle Seahawks @ San Francisco 49ers - Total (49.5)",
+        "outcomes": [
+          "Over 49.5",
+          "Under 49.5"
+        ],
+        "prices": {
+          "Over 49.5": 0.5,
+          "Under 49.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772961",
+          "total": 49.5
+        }
+      },
+      {
+        "id": "espn_401772966_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "New Orleans Saints @ Atlanta Falcons - Spread (-3.5)",
+        "outcomes": [
+          "Atlanta Falcons -3.5",
+          "New Orleans Saints 3.5"
+        ],
+        "prices": {
+          "Atlanta Falcons -3.5": 0.5,
+          "New Orleans Saints 3.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772966",
+          "spread": -3.5
+        }
+      },
+      {
+        "id": "espn_401772966_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "New Orleans Saints @ Atlanta Falcons - Total (43.5)",
+        "outcomes": [
+          "Over 43.5",
+          "Under 43.5"
+        ],
+        "prices": {
+          "Over 43.5": 0.5,
+          "Under 43.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772966",
+          "total": 43.5
+        }
+      },
+      {
+        "id": "espn_401772964_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Cleveland Browns @ Cincinnati Bengals - Spread (-7.5)",
+        "outcomes": [
+          "Cincinnati Bengals -7.5",
+          "Cleveland Browns 7.5"
+        ],
+        "prices": {
+          "Cincinnati Bengals -7.5": 0.5,
+          "Cleveland Browns 7.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772964",
+          "spread": -7.5
+        }
+      },
+      {
+        "id": "espn_401772964_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Cleveland Browns @ Cincinnati Bengals - Total (44.5)",
+        "outcomes": [
+          "Over 44.5",
+          "Under 44.5"
+        ],
+        "prices": {
+          "Over 44.5": 0.5,
+          "Under 44.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772964",
+          "total": 44.5
+        }
+      },
+      {
+        "id": "espn_401772968_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Green Bay Packers @ Minnesota Vikings - Spread (-6.5)",
+        "outcomes": [
+          "Minnesota Vikings -6.5",
+          "Green Bay Packers 6.5"
+        ],
+        "prices": {
+          "Minnesota Vikings -6.5": 0.5,
+          "Green Bay Packers 6.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772968",
+          "spread": -6.5
+        }
+      },
+      {
+        "id": "espn_401772968_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Green Bay Packers @ Minnesota Vikings - Total (36.5)",
+        "outcomes": [
+          "Over 36.5",
+          "Under 36.5"
+        ],
+        "prices": {
+          "Over 36.5": 0.5,
+          "Under 36.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772968",
+          "total": 36.5
+        }
+      },
+      {
+        "id": "espn_401772963_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Dallas Cowboys @ New York Giants - Spread (3.5)",
+        "outcomes": [
+          "New York Giants 3.5",
+          "Dallas Cowboys -3.5"
+        ],
+        "prices": {
+          "New York Giants 3.5": 0.5,
+          "Dallas Cowboys -3.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772963",
+          "spread": 3.5
+        }
+      },
+      {
+        "id": "espn_401772963_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Dallas Cowboys @ New York Giants - Total (51.5)",
+        "outcomes": [
+          "Over 51.5",
+          "Under 51.5"
+        ],
+        "prices": {
+          "Over 51.5": 0.5,
+          "Under 51.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772963",
+          "total": 51.5
+        }
+      },
+      {
+        "id": "espn_401772970_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Tennessee Titans @ Jacksonville Jaguars - Spread (-12.5)",
+        "outcomes": [
+          "Jacksonville Jaguars -12.5",
+          "Tennessee Titans 12.5"
+        ],
+        "prices": {
+          "Jacksonville Jaguars -12.5": 0.5,
+          "Tennessee Titans 12.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772970",
+          "spread": -12.5
+        }
+      },
+      {
+        "id": "espn_401772970_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Tennessee Titans @ Jacksonville Jaguars - Total (47.5)",
+        "outcomes": [
+          "Over 47.5",
+          "Under 47.5"
+        ],
+        "prices": {
+          "Over 47.5": 0.5,
+          "Under 47.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772970",
+          "total": 47.5
+        }
+      },
+      {
+        "id": "espn_401772962_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Indianapolis Colts @ Houston Texans - Spread (-10.5)",
+        "outcomes": [
+          "Houston Texans -10.5",
+          "Indianapolis Colts 10.5"
+        ],
+        "prices": {
+          "Houston Texans -10.5": 0.5,
+          "Indianapolis Colts 10.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772962",
+          "spread": -10.5
+        }
+      },
+      {
+        "id": "espn_401772962_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Indianapolis Colts @ Houston Texans - Total (38.5)",
+        "outcomes": [
+          "Over 38.5",
+          "Under 38.5"
+        ],
+        "prices": {
+          "Over 38.5": 0.5,
+          "Under 38.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772962",
+          "total": 38.5
+        }
+      },
+      {
+        "id": "espn_401772967_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "New York Jets @ Buffalo Bills - Spread (-7.0)",
+        "outcomes": [
+          "Buffalo Bills -7.0",
+          "New York Jets 7.0"
+        ],
+        "prices": {
+          "Buffalo Bills -7.0": 0.5,
+          "New York Jets 7.0": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772967",
+          "spread": -7.0
+        }
+      },
+      {
+        "id": "espn_401772967_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "New York Jets @ Buffalo Bills - Total (38.5)",
+        "outcomes": [
+          "Over 38.5",
+          "Under 38.5"
+        ],
+        "prices": {
+          "Over 38.5": 0.5,
+          "Under 38.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772967",
+          "total": 38.5
+        }
+      },
+      {
+        "id": "espn_401772965_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Detroit Lions @ Chicago Bears - Spread (-3.0)",
+        "outcomes": [
+          "Chicago Bears -3.0",
+          "Detroit Lions 3.0"
+        ],
+        "prices": {
+          "Chicago Bears -3.0": 0.5,
+          "Detroit Lions 3.0": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772965",
+          "spread": -3.0
+        }
+      },
+      {
+        "id": "espn_401772965_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Detroit Lions @ Chicago Bears - Total (50.5)",
+        "outcomes": [
+          "Over 50.5",
+          "Under 50.5"
+        ],
+        "prices": {
+          "Over 50.5": 0.5,
+          "Under 50.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772965",
+          "total": 50.5
+        }
+      },
+      {
+        "id": "espn_401772956_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Los Angeles Chargers @ Denver Broncos - Spread (-12.5)",
+        "outcomes": [
+          "Denver Broncos -12.5",
+          "Los Angeles Chargers 12.5"
+        ],
+        "prices": {
+          "Denver Broncos -12.5": 0.5,
+          "Los Angeles Chargers 12.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772956",
+          "spread": -12.5
+        }
+      },
+      {
+        "id": "espn_401772956_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Los Angeles Chargers @ Denver Broncos - Total (37.5)",
+        "outcomes": [
+          "Over 37.5",
+          "Under 37.5"
+        ],
+        "prices": {
+          "Over 37.5": 0.5,
+          "Under 37.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772956",
+          "total": 37.5
+        }
+      },
+      {
+        "id": "espn_401772957_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Kansas City Chiefs @ Las Vegas Raiders - Spread (5.5)",
+        "outcomes": [
+          "Las Vegas Raiders 5.5",
+          "Kansas City Chiefs -5.5"
+        ],
+        "prices": {
+          "Las Vegas Raiders 5.5": 0.5,
+          "Kansas City Chiefs -5.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772957",
+          "spread": 5.5
+        }
+      },
+      {
+        "id": "espn_401772957_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Kansas City Chiefs @ Las Vegas Raiders - Total (36.5)",
+        "outcomes": [
+          "Over 36.5",
+          "Under 36.5"
+        ],
+        "prices": {
+          "Over 36.5": 0.5,
+          "Under 36.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772957",
+          "total": 36.5
+        }
+      },
+      {
+        "id": "espn_401772955_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Arizona Cardinals @ Los Angeles Rams - Spread (-7.5)",
+        "outcomes": [
+          "Los Angeles Rams -7.5",
+          "Arizona Cardinals 7.5"
+        ],
+        "prices": {
+          "Los Angeles Rams -7.5": 0.5,
+          "Arizona Cardinals 7.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772955",
+          "spread": -7.5
+        }
+      },
+      {
+        "id": "espn_401772955_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Arizona Cardinals @ Los Angeles Rams - Total (46.5)",
+        "outcomes": [
+          "Over 46.5",
+          "Under 46.5"
+        ],
+        "prices": {
+          "Over 46.5": 0.5,
+          "Under 46.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772955",
+          "total": 46.5
+        }
+      },
+      {
+        "id": "espn_401772958_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Miami Dolphins @ New England Patriots - Spread (-10.5)",
+        "outcomes": [
+          "New England Patriots -10.5",
+          "Miami Dolphins 10.5"
+        ],
+        "prices": {
+          "New England Patriots -10.5": 0.5,
+          "Miami Dolphins 10.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772958",
+          "spread": -10.5
+        }
+      },
+      {
+        "id": "espn_401772958_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Miami Dolphins @ New England Patriots - Total (45.5)",
+        "outcomes": [
+          "Over 45.5",
+          "Under 45.5"
+        ],
+        "prices": {
+          "Over 45.5": 0.5,
+          "Under 45.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772958",
+          "total": 45.5
+        }
+      },
+      {
+        "id": "espn_401772959_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Washington Commanders @ Philadelphia Eagles - Spread (-7.0)",
+        "outcomes": [
+          "Philadelphia Eagles -7.0",
+          "Washington Commanders 7.0"
+        ],
+        "prices": {
+          "Philadelphia Eagles -7.0": 0.5,
+          "Washington Commanders 7.0": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772959",
+          "spread": -7.0
+        }
+      },
+      {
+        "id": "espn_401772959_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Washington Commanders @ Philadelphia Eagles - Total (41.5)",
+        "outcomes": [
+          "Over 41.5",
+          "Under 41.5"
+        ],
+        "prices": {
+          "Over 41.5": 0.5,
+          "Under 41.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772959",
+          "total": 41.5
+        }
+      },
+      {
+        "id": "espn_401772960_spread",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Baltimore Ravens @ Pittsburgh Steelers - Spread (3.5)",
+        "outcomes": [
+          "Pittsburgh Steelers 3.5",
+          "Baltimore Ravens -3.5"
+        ],
+        "prices": {
+          "Pittsburgh Steelers 3.5": 0.5,
+          "Baltimore Ravens -3.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772960",
+          "spread": 3.5
+        }
+      },
+      {
+        "id": "espn_401772960_total",
+        "platform": "espn",
+        "category": "game_props",
+        "name": "Baltimore Ravens @ Pittsburgh Steelers - Total (40.5)",
+        "outcomes": [
+          "Over 40.5",
+          "Under 40.5"
+        ],
+        "prices": {
+          "Over 40.5": 0.5,
+          "Under 40.5": 0.5
+        },
+        "volume": 0,
+        "liquidity": 0,
+        "expires_at": null,
+        "metadata": {
+          "event_id": "401772960",
+          "total": 40.5
+        }
+      }
+    ]
+  }
+}

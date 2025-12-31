@@ -1,0 +1,97 @@
+2025-12-31 00:40:51,451 [INFO] No saved playbooks found, starting fresh
+2025-12-31 00:40:51,451 [INFO] Added playbook: Patriots Whale Follow
+2025-12-31 00:40:51,475 [INFO] Added playbook: Chiefs Value Play
+2025-12-31 00:40:51,478 [INFO] Added watchlist: Top 10 Whales
+2025-12-31 00:40:51,480 [INFO] Added watchlist: Super Bowl Markets
+2025-12-31 00:40:51,482 [INFO] Added watchlist: MVP Candidates
+2025-12-31 00:41:15,182 [INFO] Apollo Edge stopped
+2025-12-31 00:56:08,202 [INFO] Loaded 1 playbooks
+2025-12-31 00:56:08,203 [INFO] Loaded 0 watchlists
+2025-12-31 00:56:08,203 [INFO] Loaded 0 arb routes
+2025-12-31 00:56:08,203 [INFO] Added playbook: Whale Snipe $10K+
+2025-12-31 00:56:08,203 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_10k
+2025-12-31 00:56:08,203 [INFO] Added playbook: Whale Snipe $25K+ (Auto)
+2025-12-31 00:56:08,205 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_25k
+2025-12-31 00:56:08,205 [INFO] Added playbook: Coordinated Whale Cluster
+2025-12-31 00:56:08,205 [INFO] [PLAYBOOK] Loaded playbook: whale_cluster_alert
+2025-12-31 00:56:08,205 [INFO] Added playbook: CEX Whale Tracker
+2025-12-31 00:56:08,206 [INFO] [PLAYBOOK] Loaded playbook: cex_whale_detector
+2025-12-31 00:56:08,206 [INFO] Added playbook: MVP Value vs Sportsbooks
+2025-12-31 00:56:08,206 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_mvp
+2025-12-31 00:56:08,207 [INFO] Added playbook: Super Bowl Value Detector
+2025-12-31 00:56:08,207 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_superbowl
+2025-12-31 00:56:08,207 [INFO] Added playbook: Super Bowl Momentum
+2025-12-31 00:56:08,209 [INFO] [PLAYBOOK] Loaded playbook: superbowl_momentum
+2025-12-31 00:56:08,209 [INFO] Added playbook: Conference Champion Value
+2025-12-31 00:56:08,210 [INFO] [PLAYBOOK] Loaded playbook: afc_nfc_champion_value
+2025-12-31 00:56:08,210 [INFO] Added playbook: Player Props Whale Follow
+2025-12-31 00:56:08,211 [INFO] [PLAYBOOK] Loaded playbook: player_props_whale
+2025-12-31 00:56:08,211 [INFO] Added watchlist: Top 10 Whales
+2025-12-31 00:56:08,212 [INFO] [WATCHLIST] Loaded watchlist: top_whales
+2025-12-31 00:56:08,212 [INFO] Added watchlist: Super Bowl Markets
+2025-12-31 00:56:08,213 [INFO] [WATCHLIST] Loaded watchlist: superbowl_markets
+2025-12-31 00:56:08,215 [INFO] Added watchlist: MVP Candidates
+2025-12-31 00:56:08,216 [INFO] [WATCHLIST] Loaded watchlist: mvp_candidates
+2025-12-31 00:56:08,216 [INFO] [SUCCESS] Playbooks system enabled
+2025-12-31 00:56:08,218 [INFO] [STARTING] Apollo Edge launching...
+2025-12-31 01:07:16,298 [INFO] Apollo Edge stopped
+2025-12-31 01:24:49,083 [INFO] Loaded 9 playbooks
+2025-12-31 01:24:49,083 [INFO] Loaded 3 watchlists
+2025-12-31 01:24:49,083 [INFO] Loaded 0 arb routes
+2025-12-31 01:24:49,083 [INFO] Added playbook: Whale Snipe $10K+
+2025-12-31 01:24:49,084 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_10k
+2025-12-31 01:24:49,084 [INFO] Added playbook: Whale Snipe $25K+ (Auto)
+2025-12-31 01:24:49,085 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_25k
+2025-12-31 01:24:49,085 [INFO] Added playbook: Coordinated Whale Cluster
+2025-12-31 01:24:49,085 [INFO] [PLAYBOOK] Loaded playbook: whale_cluster_alert
+2025-12-31 01:24:49,085 [INFO] Added playbook: CEX Whale Tracker
+2025-12-31 01:24:49,086 [INFO] [PLAYBOOK] Loaded playbook: cex_whale_detector
+2025-12-31 01:24:49,086 [INFO] Added playbook: MVP Value vs Sportsbooks
+2025-12-31 01:24:49,086 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_mvp
+2025-12-31 01:24:49,086 [INFO] Added playbook: Super Bowl Value Detector
+2025-12-31 01:24:49,088 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_superbowl
+2025-12-31 01:24:49,088 [INFO] Added playbook: Super Bowl Momentum
+2025-12-31 01:24:49,089 [INFO] [PLAYBOOK] Loaded playbook: superbowl_momentum
+2025-12-31 01:24:49,089 [INFO] Added playbook: Conference Champion Value
+2025-12-31 01:24:49,089 [INFO] [PLAYBOOK] Loaded playbook: afc_nfc_champion_value
+2025-12-31 01:24:49,090 [INFO] Added playbook: Player Props Whale Follow
+2025-12-31 01:24:49,090 [INFO] [PLAYBOOK] Loaded playbook: player_props_whale
+2025-12-31 01:24:49,090 [INFO] Added watchlist: Top 10 Whales
+2025-12-31 01:24:49,092 [INFO] [WATCHLIST] Loaded watchlist: top_whales
+2025-12-31 01:24:49,092 [INFO] Added watchlist: Super Bowl Markets
+2025-12-31 01:24:49,093 [INFO] [WATCHLIST] Loaded watchlist: superbowl_markets
+2025-12-31 01:24:49,101 [INFO] Added watchlist: MVP Candidates
+2025-12-31 01:24:49,102 [INFO] [WATCHLIST] Loaded watchlist: mvp_candidates
+2025-12-31 01:24:49,103 [INFO] [SUCCESS] Playbooks system enabled
+2025-12-31 01:24:49,103 [INFO] [STARTING] Apollo Edge launching...
+2025-12-31 01:25:24,881 [INFO] Apollo Edge stopped
+2025-12-31 01:25:36,413 [INFO] Loaded 9 playbooks
+2025-12-31 01:25:36,413 [INFO] Loaded 3 watchlists
+2025-12-31 01:25:36,413 [INFO] Loaded 0 arb routes
+2025-12-31 01:25:36,413 [INFO] Added playbook: Whale Snipe $10K+
+2025-12-31 01:25:36,413 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_10k
+2025-12-31 01:25:36,414 [INFO] Added playbook: Whale Snipe $25K+ (Auto)
+2025-12-31 01:25:36,414 [INFO] [PLAYBOOK] Loaded playbook: whale_snipe_25k
+2025-12-31 01:25:36,414 [INFO] Added playbook: Coordinated Whale Cluster
+2025-12-31 01:25:36,415 [INFO] [PLAYBOOK] Loaded playbook: whale_cluster_alert
+2025-12-31 01:25:36,415 [INFO] Added playbook: CEX Whale Tracker
+2025-12-31 01:25:36,417 [INFO] [PLAYBOOK] Loaded playbook: cex_whale_detector
+2025-12-31 01:25:36,417 [INFO] Added playbook: MVP Value vs Sportsbooks
+2025-12-31 01:25:36,418 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_mvp
+2025-12-31 01:25:36,418 [INFO] Added playbook: Super Bowl Value Detector
+2025-12-31 01:25:36,418 [INFO] [PLAYBOOK] Loaded playbook: sportsbook_value_superbowl
+2025-12-31 01:25:36,418 [INFO] Added playbook: Super Bowl Momentum
+2025-12-31 01:25:36,419 [INFO] [PLAYBOOK] Loaded playbook: superbowl_momentum
+2025-12-31 01:25:36,419 [INFO] Added playbook: Conference Champion Value
+2025-12-31 01:25:36,420 [INFO] [PLAYBOOK] Loaded playbook: afc_nfc_champion_value
+2025-12-31 01:25:36,420 [INFO] Added playbook: Player Props Whale Follow
+2025-12-31 01:25:36,420 [INFO] [PLAYBOOK] Loaded playbook: player_props_whale
+2025-12-31 01:25:36,422 [INFO] Added watchlist: Top 10 Whales
+2025-12-31 01:25:36,422 [INFO] [WATCHLIST] Loaded watchlist: top_whales
+2025-12-31 01:25:36,422 [INFO] Added watchlist: Super Bowl Markets
+2025-12-31 01:25:36,423 [INFO] [WATCHLIST] Loaded watchlist: superbowl_markets
+2025-12-31 01:25:36,423 [INFO] Added watchlist: MVP Candidates
+2025-12-31 01:25:36,425 [INFO] [WATCHLIST] Loaded watchlist: mvp_candidates
+2025-12-31 01:25:36,427 [INFO] [SUCCESS] Playbooks system enabled
+2025-12-31 01:25:36,428 [INFO] [STARTING] Apollo Edge launching...
+2025-12-31 01:28:48,997 [INFO] Apollo Edge stopped
